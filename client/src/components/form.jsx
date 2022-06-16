@@ -69,24 +69,23 @@ const ProductForm = (props) => {
             <form onSubmit={createProduct}>
                 <h3>{formMessage()}</h3>
                 <div>
-                    <label>Title: </label>
+                    <label>Title : </label>
                     <input type="text" onChange={handleTitle} value={title} />
                     <p>{titleError}</p>
-                </div>
-                Title : {title} 
+                </div>                 
                 <div>
-                    <label>Price: </label>
+                    <label>Price : </label>
                     <input type="text" onChange={handlePrice} value={price} />
                     <p>{priceError}</p>
                 </div>
-                Price : {price}
+                
                 <div>
-                    <label>Description: </label>
+                    <label>Desc. : </label>
                     <input type="text" onChange={(e) => handleDescription(e)} value={description} />
                     <p>{descriptionError}</p>
                 </div>
-                Description : {description}
-                <input type="submit" value="Create User" />
+                
+                <input type="submit" value="Create Product" />
             </form>
         </div>
     );

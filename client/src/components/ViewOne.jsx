@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const ViewOne = (props) =>{
     const [products, setProducts] = useState([])
-    const {id} = useParams();
+    const { id } = useParams();
     const [thisProduct, setThisProduct] = useState({});
     useEffect( () => {
         axios.get("http://localhost:8001/api/products/"+ id)
@@ -30,13 +30,13 @@ const ViewOne = (props) =>{
             .catch(err => console.log(err))
         }
     
-
     return <div>
         <h2>View One</h2>
-        <h2>{thisProduct.title}</h2>
-        <h2>{thisProduct.price}</h2>
-        <h2>{thisProduct.description}</h2>
+        <h2>Title : {thisProduct.title}</h2>
+        <h2>Price : {thisProduct.price}</h2>
+        <h2>Desc. :{thisProduct.description}</h2>
         <Link to={"/products/update/" +id}>edit</Link>
+        <h2></h2>
         <button onClick={ () => deleteProduct(id)}>delete</button>
     </div>
 }

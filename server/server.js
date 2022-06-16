@@ -14,5 +14,5 @@ require("./config/mongoose.config")(DB);
 require("./routes/product.routes")(app);
 
 app.listen(PORT, () => {
-    console.log(`**** server up on ${PORT}****`)
+    console.log(`**** server up on ${PORT} ****`)
 })
