@@ -28,7 +28,7 @@ const ProductForm = (props) => {
         if( hasBeenSubmitted ) {
 	    return "Thank you for submitting the form!";
 	} else {
-	    return "Welcome, please submit the form";
+	    return "Welcome, please submit the form.";
 	}
     };
 
