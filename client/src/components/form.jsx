@@ -20,7 +20,7 @@ const ProductForm = (props) => {
                 console.log("SUCCESS writing to db that is amazing")
             })
             .catch( err => {
-                console.log("ERRORROOROR")
+                console.log("ERROR")
             })
     };
 
