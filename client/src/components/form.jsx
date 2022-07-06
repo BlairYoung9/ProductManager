@@ -57,7 +57,7 @@ const ProductForm = (props) => {
         if(e.target.value.length < 1) {
             setDescriptionError("Description is required.");
         } else if(e.target.value.length < 5) {
-            setDescriptionError("Description must be 5 characters or longer.");
+            setDescriptionError("Description must be 5 characters");
         }else{
             setDescriptionError(""); 
         }
