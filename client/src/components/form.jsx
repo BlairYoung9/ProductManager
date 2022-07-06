@@ -26,7 +26,7 @@ const ProductForm = (props) => {
 
     const formMessage = () => {
         if( hasBeenSubmitted ) {
-	    return "Thank you for submitting the form!";
+	    return "Thank you for submitting the form.";
 	} else {
 	    return "Welcome, please submit the form.";
 	}
@@ -35,9 +35,9 @@ const ProductForm = (props) => {
     const handleTitle= (e) => {
         setTitle(e.target.value);
         if(e.target.value.length < 1) {
-            setTitleError("Title is required!");
+            setTitleError("Title is required.");
         } else if(e.target.value.length < 2) {
-            setTitleError("Title must be 2 characters or longer!");
+            setTitleError("Title must be 2 characters or longer.");
         }else{
             setTitleError(""); 
         }
@@ -45,9 +45,9 @@ const ProductForm = (props) => {
     const handlePrice= (e) => {
         setPrice(e.target.value);
         if(e.target.value.length < 1) {
-            setPriceError("Price is required!");
+            setPriceError("Price is required.");
         } else if(e.target.value.length < 2) {
-            setPriceError("Price must be 2 characters or longer!");
+            setPriceError("Price must be 2 characters or longer.");
         }else{
             setPriceError(""); 
         }
@@ -55,9 +55,9 @@ const ProductForm = (props) => {
     const handleDescription= (e) => {
         setDescription(e.target.value);
         if(e.target.value.length < 1) {
-            setDescriptionError("Description is required!");
+            setDescriptionError("Description is required.");
         } else if(e.target.value.length < 5) {
-            setDescriptionError("Description must be 5 characters or longer!");
+            setDescriptionError("Description must be 5 characters or longer.");
         }else{
             setDescriptionError(""); 
         }
