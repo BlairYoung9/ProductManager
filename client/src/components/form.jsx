@@ -17,7 +17,7 @@ const ProductForm = (props) => {
         axios.post("http://localhost:8001/api/products",newProduct)
             .then(res =>{
                 console.log(res.data)
-                console.log("SUCCESS writing to db that is amazing")
+                console.log("SUCCESS")
             })
             .catch( err => {
                 console.log("ERROR")
