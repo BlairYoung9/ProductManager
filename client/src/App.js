@@ -15,7 +15,6 @@ function App() {
       <hr/>
       <Form/>
         
-      
       <Switch>
         <Route path = "/products/update/:id">
           <Update/>
