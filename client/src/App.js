@@ -25,8 +25,7 @@ function App() {
         </Route>
         <Route exact path = "/products">
           <All/>
-        </Route>
-         
+        </Route>    
       </Switch>
     </div>
     </BrowserRouter>
