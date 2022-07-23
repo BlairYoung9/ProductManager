@@ -43,7 +43,7 @@ const ProductForm = (props) => {
             setTitleError(""); 
         }
     }
-    //Create PRice
+    //Create Price
     const handlePrice= (e) => {
         setPrice(e.target.value);
         if(e.target.value.length < 1) {
