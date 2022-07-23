@@ -32,6 +32,7 @@ const ProductForm = (props) => {
 	}
     };
 
+    //Create Title
     const handleTitle= (e) => {
         setTitle(e.target.value);
         if(e.target.value.length < 1) {
@@ -42,6 +43,7 @@ const ProductForm = (props) => {
             setTitleError(""); 
         }
     }
+    //Create PRice
     const handlePrice= (e) => {
         setPrice(e.target.value);
         if(e.target.value.length < 1) {
@@ -52,6 +54,7 @@ const ProductForm = (props) => {
             setPriceError(""); 
         }
     }
+    //Create Description
     const handleDescription= (e) => {
         setDescription(e.target.value);
         if(e.target.value.length < 1) {
