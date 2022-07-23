@@ -46,6 +46,7 @@ const Update = (props) => {
     }
     
 
+    //Update Title
     const handleTitle= (e) => {
         setTitle(e.target.value);
         if(e.target.value.length < 1) {
@@ -56,6 +57,7 @@ const Update = (props) => {
             setTitleError(""); 
         }
     }
+    //Update Price
     const handlePrice= (e) => {
         setPrice(e.target.value);
         if(e.target.value.length < 1) {
@@ -66,6 +68,7 @@ const Update = (props) => {
             setPriceError(""); 
         }
     }
+    //Update description
     const handleDescription= (e) => {
         setDescription(e.target.value);
         if(e.target.value.length < 1) {
