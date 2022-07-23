@@ -15,6 +15,8 @@ const Update = (props) => {
     const [description, setDescription] = useState("");
     const [descriptionError, setDescriptionError] = useState("");
 
+
+    //Set Product
     useEffect(() => {
         axios.get("http://localhost:8001/api/products/" + id)
             .then(res => {
@@ -27,6 +29,7 @@ const Update = (props) => {
 
     }, [])
 
+    //Update Product
     const update = (e) => {
         e.preventDefault();
         const newProduct = { title, price, description };
